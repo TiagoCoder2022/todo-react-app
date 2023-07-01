@@ -1,0 +1,45 @@
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 2px 2px -1px #d11ffdcc;
+  width: 315px;
+  margin: 25px 0;
+  border-radius: 4px;  
+  /* background: #1A1A1C; */
+  background: #160516cc;
+}
+
+.todo_radio, .todo_radio_unchecked {
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  /* background-color: #FD951Fcc; */
+  background-color: #d11ffdcc;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.todo_text, .todo_text_checked {
+  color: white;
+  flex: 1;  
+  padding-left: 8px;
+}
+
+.todo_delete {
+  cursor: pointer;
+}
+
+.todo_radio_unchecked {
+  background-color: transparent;
+}
+
+.todo_text_checked {
+  text-decoration: line-through;
+  color: #0f90a1;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+.boards {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.board {   
+  border: 2px solid rgba(255, 255, 255, .5);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.board>h3 {
+  margin-top: .5rem;
+  padding: 16px;
+  color: #f5e3f4cc;
+  text-align: center;
+}
+
+.dropzone {
+  padding: 16px;  
+  min-width: 352px;
+  min-height: 200px;
+}
+
+.task__form {
+  display: flex;
+  column-gap: .5rem;
+  background-color: var(--container-color);
+  padding: .5rem .75rem;
+  border-radius: .5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.task__input {
+  background-color: var(--container-color);
+  width: 90%;
+  color: var(--white-color);
+  border-radius: .5rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.task__input::placeholder {
+  color: gray;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  padding-left: .6rem;
+  
+}
+
+.button {
+  font-family: 'VT323', monospace; 
+  font-size: 1.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(13, 24, 124);
+}
+
+.button__icon {
+  font-size: 1.2rem;
+}
+
+.time_wrapper{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.empty {
+  color: #f5e3f4cc;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
